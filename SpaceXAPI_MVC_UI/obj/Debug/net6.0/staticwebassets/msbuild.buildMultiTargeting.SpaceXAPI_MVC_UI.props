@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SpaceXAPI_MVC_UI.props" />
+</Project>
