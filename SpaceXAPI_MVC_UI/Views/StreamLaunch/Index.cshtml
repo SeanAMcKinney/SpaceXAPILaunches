@@ -1,0 +1,42 @@
+﻿@model IEnumerable<SpaceXAPI_MVC_UI.Models.LaunchModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Streamed Launch Data</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>s
+                @Html.DisplayNameFor(model => model.Rocket)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Success)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rocket)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Success)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

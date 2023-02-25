@@ -1,16 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SpaceXAPILaunchesTake2.Services;
-using SpaceXAPILaunchesTake2.Models;
+using SpaceXAPI_MVC_UI.Services;
 
-namespace SpaceXAPILaunchesTake2.Controllers
+namespace SpaceXAPI_MVC_UI.Controllers
 {
     public class LaunchController : Controller
     {
-        public async Task<IActionResult> IndexAsync()
+        public async Task<IActionResult> Index()
         {
-            var launches = new List<LaunchModel>();
             CRUDService getLaunches = new CRUDService();
-            launches = (List<LaunchModel>)await getLaunches.GetResourceThroughHttpRequestMessage();
+            var launches = await getLaunches.GetResourceThroughHttpRequestMessage();
             return View(launches);
         }
     }

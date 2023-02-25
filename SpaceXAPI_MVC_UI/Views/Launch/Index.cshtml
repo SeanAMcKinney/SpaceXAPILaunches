@@ -1,11 +1,14 @@
-﻿@model IEnumerable<SpaceXAPILaunchesTake2.Models.LaunchModel>
+﻿@model IEnumerable<SpaceXAPI_MVC_UI.Models.LaunchModel>
 
 @{
-    ViewData["Title"] = "Launches";
+    ViewData["Title"] = "Launch Data";
 }
 
-<h1>Index</h1>
+<h1>Launch Data</h1>
 
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
 <table class="table">
     <thead>
         <tr>

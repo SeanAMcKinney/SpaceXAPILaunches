@@ -1,9 +1,9 @@
-﻿using SpaceXAPILaunchesTake2.Models;
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Xml.Serialization;
+using SpaceXAPI_MVC_UI.Models;
 
-namespace SpaceXAPILaunchesTake2.Services
+namespace SpaceXAPI_MVC_UI.Services
 {
     public class CRUDService 
     {
@@ -41,7 +41,7 @@ namespace SpaceXAPILaunchesTake2.Services
             // do other things with list if you want
         }
 
-        public async Task<IEnumerable<LaunchModel>> GetResourceThroughHttpRequestMessage()
+        public async Task<IEnumerable<LaunchModel>?> GetResourceThroughHttpRequestMessage()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, "launches");
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));

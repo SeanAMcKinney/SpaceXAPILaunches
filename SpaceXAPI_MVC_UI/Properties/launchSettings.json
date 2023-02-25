@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "SpaceXAPILaunchesTake2": {
+    "SpaceXAPI_MVC_UI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

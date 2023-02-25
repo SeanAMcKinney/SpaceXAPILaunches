@@ -1,4 +1,4 @@
-﻿namespace SpaceXAPILaunchesTake2.Models
+﻿namespace SpaceXAPI_MVC_UI.Models
 {
     public class LaunchModel
     {

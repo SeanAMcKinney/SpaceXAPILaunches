@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SpaceXAPILaunchesTake2.Models;
+using SpaceXAPI_MVC_UI.Models;
 using System.Diagnostics;
 
-namespace SpaceXAPILaunchesTake2.Controllers
+namespace SpaceXAPI_MVC_UI.Controllers
 {
     public class HomeController : Controller
     {
